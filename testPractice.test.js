@@ -12,3 +12,7 @@ test('is this also capitalized', () => {
 test('is this not capitalized', () => {
   expect(capitalize('adam')).not.toMatch('adam');
 });
+
+test('all lowercase except first letter', () => {
+  expect(capitalize('aDam')).toMatch('Adam');
+});
