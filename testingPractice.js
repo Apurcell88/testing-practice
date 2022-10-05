@@ -6,4 +6,13 @@ function capitalize(word) {
   return capitalizedWord;
 }
 
-export default capitalize;
+function reverseString(word) {
+  const wordArray = word.split('').reverse();
+  const reversedWord = wordArray.join('');
+
+  return reversedWord.toLowerCase();
+}
+
+reverseString('the best');
+
+export { capitalize, reverseString };
