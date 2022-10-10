@@ -17,4 +17,4 @@ function caesarCipher(string) {
   // takes a string and returns it with each character shifted
 }
 
-export { capitalize, reverseString };
+export { capitalize, reverseString, caesarCipher };
