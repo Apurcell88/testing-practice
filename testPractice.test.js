@@ -73,3 +73,8 @@ test('do calculator calculations compute', () => {
   // floating numbers
   expect(calculator.divide(4, -2.3)).toBeCloseTo(-1.74);
 });
+
+// caesarCipher testing
+test('is shift correct', () => {
+  expect(caesarCipher('adam')).toBe('bebn');
+});
