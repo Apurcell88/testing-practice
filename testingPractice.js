@@ -13,6 +13,8 @@ function reverseString(word) {
   return reversedWord.toLowerCase();
 }
 
-reverseString('the best');
+function caesarCipher(string) {
+  // takes a string and returns it with each character shifted
+}
 
 export { capitalize, reverseString };
