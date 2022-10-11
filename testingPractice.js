@@ -45,4 +45,31 @@ function caesarCipher(string) {
   return shiftedString;
 }
 
-export { capitalize, reverseString, caesarCipher };
+function analyzeArray(arr) {
+  // return an object with properties of average, min, max, length
+  let sum = 0;
+  return {
+    average() {
+      arr.forEach((num) => {
+        sum += num;
+      });
+      return sum / arr.length;
+    },
+
+    min() {
+      return Math.min(...arr);
+    },
+
+    max() {
+      return Math.max(...arr);
+    },
+
+    length() {
+      return arr.length;
+    },
+  };
+}
+
+export {
+  capitalize, reverseString, caesarCipher, analyzeArray,
+};

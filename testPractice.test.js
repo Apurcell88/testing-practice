@@ -1,4 +1,6 @@
-import { capitalize, reverseString, caesarCipher } from './testingPractice';
+import {
+  capitalize, reverseString, caesarCipher, analyzeArray,
+} from './testingPractice';
 
 // // capitalized function testing
 test('is this capitalized', () => {
@@ -89,4 +91,21 @@ test('case insensitive', () => {
 
 test('punctuation', () => {
   expect(() => caesarCipher('yay!')).toThrow('punctuation is not allowed');
+});
+
+// analyzeArray testing
+test('is average correct', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).average()).toEqual(4);
+});
+
+test('is minimum number correct', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).min()).toEqual(1);
+});
+
+test('is maximum number correct', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).max()).toEqual(8);
+});
+
+test('is length correct', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).length()).toEqual(6);
 });
