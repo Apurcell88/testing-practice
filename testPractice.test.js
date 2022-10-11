@@ -78,3 +78,15 @@ test('do calculator calculations compute', () => {
 test('is shift correct', () => {
   expect(caesarCipher('adam')).toBe('bebn');
 });
+
+test('does z to a work', () => {
+  expect(caesarCipher('zebra')).toBe('afcsb');
+});
+
+test('case insensitive', () => {
+  expect(caesarCipher('ApPlE')).toBe('bqqmf');
+});
+
+test('punctuation', () => {
+  expect(() => caesarCipher('yay!')).toThrow('punctuation is not allowed');
+});
